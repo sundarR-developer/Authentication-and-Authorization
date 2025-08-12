@@ -50,7 +50,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({
     status: 'success',
     message: 'Server is running',
